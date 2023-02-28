@@ -1,0 +1,58 @@
+body{
+    background: url(./img/fond-espace.jpg) center/cover;
+    height: 100%;
+    cursor: crosshair;
+    overflow: hidden;
+}
+.skyElement{
+    position: absolute;
+}
+.skye{
+    position: absolute;
+}
+.vaisseau{
+    position: absolute;
+}
+.objet{
+    transform: rotate(180deg);
+    animation: rotating 20s linear infinite;
+}
+@keyframes rotating {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#vaisseau{
+    position: absolute;
+    width: 100px;
+}
+footer{
+    background:rgba(0,0,0,0.5);
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:50px;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border:3px solid lime;
+}
+footer select{
+    height:30px;
+}
+.bouton{
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    display: block;
+    margin: auto;
+    width: 20%;
+}
